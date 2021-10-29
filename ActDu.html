@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Datos Dueño</title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/boostrap"></script>
+        <style>
+            .txt-fc{
+                  font-family:"Times New Roman", Times, serif;
+                  color: white;
+                  text-align: center;}
+            .txt-fi{
+                  font-family:"Times New Roman", Times, serif;
+                  color: white;
+                  font-style: italic;
+                  text-align: center;}
+            .btn-space {
+                margin-right: 40px;
+                text-align: center;}
+              
+            </style>
+    </head>
+    <body>   
+    <div class="container-fluid" style="background-color: rgb(97, 35, 81);border-style: solid; border-color: aliceblue; padding: 40px;"> 
+    <div class="container" style="padding: 20px;">
+    <br><br><br>
+    <h1 class="display-4 txt-fc">Clinica Veterinaria</h1>
+    <h3 class=" txt-fi">"Huellitas"</h3><br>
+    <h2 class=" txt-fc">**Actualizar Datos**</h2>
+    <br>
+    <button type="button" class="btn btn-outline-danger">
+        <a href="index.html">
+        Cancelar Actualización
+        </a>
+    </button>
+        <form action="ActDu.php" method="POST"> 
+    <br><br><br><br>
+      <label for="inputName" class="txt-fc">Nombre</label>
+      <input type="text" class="form-control" name="nombre" placeholder="Angel">
+    
+    <label for="inputEmail4" class="txt-fc">Correo</label>
+    <input type="text" class="form-control" name="correo" placeholder="email@ex.com">
+    <br><br>
+  <button type="submit" class="btn btn-outline-primary ">Buscar</button>
+</form>
+<br><br>
+</div>
+</div>
+
+</body>
+<script src="js/jquery.js"></script>
+</html>

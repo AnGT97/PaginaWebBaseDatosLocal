@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Modificar Dueño</title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.js"></script>
+
+        <style>
+            .txt-fc{
+                  font-family:"Times New Roman", Times, serif;
+                  color: white;
+                  text-align: center;}
+            .txt-fl{
+                  font-family:"Times New Roman", Times, serif;
+                  color: white;
+                  text-align:left;}
+            .txt-fb{
+                  font-family:"Times New Roman", Times, serif;
+                  color: white;
+                  font-style: italic;}
+            .txt-fi{
+                  font-family:"Times New Roman", Times, serif;
+                  color: white;
+                  font-style: italic;
+                  text-align: center;}
+            .imag-c{
+                text-align: center;
+                width: 100%;
+                height: 450px;}
+            .btn-space {
+                margin-right: 40px;
+                text-align: center;}
+              
+            </style>
+    </head>
+<body>
+    <div class="container-fluid" style="background-color: rgb(97, 35, 81);border-style: solid; border-color: aliceblue; padding: 40px;">   
+        <h1 class="display-4 txt-fc">Clinica Veterinaria</h1>
+        <h3 class=" txt-fi">"Huellitas"</h3><br>
+        <h2 class=" txt-fc">**Modificar Datos del Dueño**</h2>
+        <br><br>
+        <button type="button" class="btn btn-outline-danger btn-space">
+            <a href="ActDu.html">
+            Cancelar Modificación
+            </a>
+        </button>
+        <br><br>
+    <div class="container" style="border-style: solid; border-color: aliceblue; padding: 20px;">
+    <form action="Modificar.php" method="POST">
+        <div class="row">
+            <div class="col btn-space">
+                <br><br>
+                <img src="imag/due.jpg" class="imag-c">
+        </div>
+
+        <div class="col btn-space">
+
+            <label for="inputName" class="txt-fc">ID</label>
+                 <input type="text" class="form-control" name="ID" placeholder="1">
+                 <br>
+                <label for="inputName" class="txt-fc">Nombre completo</label>
+                 <input type="text" class="form-control" name="Propietario" placeholder="Juanita Banana">
+                 <br>
+            <label for="Correo" class="txt-fc">Correo</label>
+            <input type="text" name="Correo" class="form-control" placeholder="email@ejemplo.com">
+            <br>
+             <label for="Direccion" class="txt-fc">Direccion</label>
+            <input type="text" class="form-control" name="Direccion" placeholder="Colonia de Lomas Altas">
+            <br>
+            <label for="Celular" class="txt-fc">Celular</label>
+            <input type="text" class="form-control" placeholder="55 5555 5555" name="Cel">
+            <br>
+            <label for="Telefono" class="txt-fc">Telefono de Casa</label>
+             <input type="text" class="form-control" placeholder="55 5555 5555" name="Tel">
+             <br><br>
+        <input type="submit" class="btn btn-outline-primary" name="Registrar" value="Modificar">
+    </div>
+</div>
+         <br>
+</form>
+</body>
+<script src="js/jquery.js"></script>
+</html>

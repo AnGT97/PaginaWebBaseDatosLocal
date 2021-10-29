@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Ventas</title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/boostrap"></script>
+        <style>
+          .txt-fc{
+                font-family:"Times New Roman", Times, serif;
+                color: white;
+                text-align: center;}
+          .txt-fl{
+                font-family:"Times New Roman", Times, serif;
+                color: white;
+                text-align:left;}
+          .txt-fb{
+                font-family:"Times New Roman", Times, serif;
+                color: white;
+                font-style: italic;}
+          .txt-fi{
+                font-family:"Times New Roman", Times, serif;
+                color: white;
+                font-style: italic;
+                text-align: center;}
+          .imag-c{
+              text-align: center;
+              width: 100%;
+              height: 450px;}
+          .btn-space {
+              margin-right: 40px;
+              text-align: center;}
+            
+          </style>
+</head>
+<body>
+   <div class="container-fluid" style="background-color: rgb(97, 35, 81);border-style: solid; border-color: aliceblue; padding: 40px;"> 
+      <form action="Mascotas.php" method="POST">
+    <br>
+    <h1 class="display-4 txt-fc">Clinica Veterinaria</h1>
+            <h3 class=" txt-fi">"Huellitas"</h3><br>
+            <h2 class=" txt-fc">**Registro de una Adopción**</h2>
+    <br>
+    <button type="button" class="btn btn-outline-danger btn-space">
+      <a href="index.html">
+      Cancelar Registro
+      </a>
+  </button>
+  <br><br>
+  <div class="container" style="border-style: solid; border-color: aliceblue; padding: 20px;">
+  <form action="Registro.php" method="POST">
+      <div class="row">
+          <div class="col btn-space">
+
+            <label for="idProp" class="txt-fc">id Propietario</label>
+            <input type="text" class="form-control" name="idp" placeholder="1">
+            <br>
+
+      <label for="#Mascot" class="txt-fc"># de mascota de la persona</label>
+      <input type="text" class="form-control" name="id" placeholder="1">
+      <br>
+      
+      <label for="MascNam" class="txt-fc">Nombre de la mascota</label>
+      <input type="text" class="form-control" name="Nom_Mascota" placeholder="Spanki">
+      <br>
+  
+    <label for="Tipo" class="txt-fc">Tipo de la Mascota</label>
+    <input type="text" class="form-control" name="Tipo" placeholder="Perro\Gato">
+    <br>
+  
+    <label for="gene" class="txt-fc">Genero</label>
+    <input type="text" class="form-control" name="Sexo" placeholder="Masculino\Femenino">
+    <br>
+
+    <label for="FecNac" class="txt-fc">Fecha de Nacimineto</label>
+    <input type="text" class="form-control" name="Nacimineto" placeholder="AAAA-MM-DD">
+    <br>
+ 
+    <label for="Vac" class="txt-fc">Vacunas</label>
+    <input type="text" class="form-control" name="Vacunas" placeholder="Todas">
+    <br><br>
+    <button type="submit" class="btn btn-outline-primary">Registrar</button>
+  </div>
+  <div class="col btn-space">
+              <br><br><br><br>
+              <img src="imag/Mas.png" class="imag-c">
+      </div>
+      </div>
+      </div>
+
+  <br><br>  
+</form>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+</html>

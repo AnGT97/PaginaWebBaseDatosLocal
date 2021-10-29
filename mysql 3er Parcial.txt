@@ -1,0 +1,33 @@
+cd C:\xampp\mysql\bin
+
+mysql -u root -p
+
+mysql>CREATE TABLE propietarios(
+id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+nombre VARCHAR(30) NOT NULL,
+direccion VARCHAR(30)NOT NULL,
+correo VARCHAR(30)NOT NULL,
+celular INT(10)NOT NULL,
+telefono INT(10)NOT NULL,
+PRIMARY KEY(id)
+)ENGINE=InnoDB;
+
+mysql>CREATE TABLE mascotas(
+id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+mac_id INT UNSIGNED NOT NULL,
+nom_masc VARCHAR(20) NOT NULL,
+tipo VARCHAR(10) NOT NULL,
+sexo VARCHAR(10) NOT NULL,
+fecha_nacimiento DATE NOT NULL,
+fecha_muerte DATE,
+vacunas VARCHAR(50),
+INDEX masc_index(mac_id),
+PRIMARY KEY(id),
+FOREIGN KEY (mac_id) REFERENCES propietarios(id) on delete cascade
+)ENGINE=InnoDB;
+
+//comandos
+mysql>desc nombretabla  ->Descripción de la tabla;
+mysql> select*from nombretabla -> Mostrar tabla;
+mysql> drop table\database nombretabla\nombrebasedat;  -> eliminar tabla \ basedat
+mysql> select*from propietarios p,mascotas m where p.id=m.mac_id; -> Mostrar datos de tablas unidas
